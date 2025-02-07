@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  primevue:
+    build: .
+    ports:
+      - "8020:8080"
+    volumes:
+      - primevue_data:/app
+    tty: true
+    stdin_open: true
+
+volumes:
+  primevue_data:
